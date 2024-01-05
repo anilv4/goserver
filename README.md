@@ -63,6 +63,7 @@ http://localhost:9000/example
 
 ## Error Responses
 
+- `200`: Returned if the requested HTML file is available.
 - `404 Not Found`: Returned if the requested HTML file is not found.
 - `501 Not Implemented`: Returned for permission issues while accessing files.
 - `500 Internal Server Error`: Returned for all other file reading errors.
