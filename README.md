@@ -47,3 +47,31 @@ To install and run GoServer, follow these steps:
 ### Example
 
 Start the server with a custom port and home directory:
+
+```
+./goserver --port=9000 --home=/path/to/html/files
+```
+
+Access an HTML file (`example.html`) located in `/path/to/html/files`:
+
+http://localhost:9000/example
+
+## Logging
+
+- Logs are printed to the console.
+- Each log entry includes the server hostname, client IP, HTTP request method, request path, response status code, and the time taken to process the request in milliseconds.
+
+## Error Responses
+
+- `404 Not Found`: Returned if the requested HTML file is not found.
+- `501 Not Implemented`: Returned for permission issues while accessing files.
+- `500 Internal Server Error`: Returned for all other file reading errors.
+
+## Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check [issues page](#) for open issues or open a new issue to discuss changes or features you would like to add.
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
